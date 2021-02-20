@@ -37,14 +37,13 @@ import com.google.android.material.snackbar.Snackbar
  * (Because we have not learned about RecyclerView yet.)
  */
 class SleepTrackerFragment : Fragment() {
-
     /**
      * Called when the Fragment is ready to display content to the screen.
      *
      * This function uses DataBindingUtil to inflate R.layout.fragment_sleep_quality.
      */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
 
         // Get a reference to the binding object and inflate the fragment views.
         val binding: FragmentSleepTrackerBinding = DataBindingUtil.inflate(
